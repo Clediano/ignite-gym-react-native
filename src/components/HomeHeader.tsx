@@ -24,7 +24,7 @@ export function HomeHeader() {
                     color="gray.100"
                     fontSize="md"
                 >
-                    Rodrigo
+                    Clediano
                 </Heading>
             </VStack>
 

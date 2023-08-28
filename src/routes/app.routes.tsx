@@ -9,6 +9,7 @@ import { Profile } from "@screens/Profile";
 import { History } from "@screens/History";
 import { Exercise } from "@screens/Exercise";
 import { useTheme } from "native-base";
+import { Platform } from "react-native";
 
 type AppRoutes = {
     home: undefined;
@@ -36,9 +37,9 @@ export function AppRoutes() {
                 tabBarStyle: {
                     backgroundColor: colors.gray[600],
                     borderTopWidth: 0,
-                    height: 96, //Platform.OS === "android" ? "auto" : 96
-                    // paddingBottom: sizes[10],
-                    // paddingTop: sizes[6],
+                    height: Platform.OS === "android" ? "auto" : 96,
+                    paddingBottom: sizes[10],
+                    paddingTop: sizes[6],
                 }
             }}
         >
